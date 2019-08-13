@@ -25,12 +25,27 @@ public class MainActivity extends Activity {
         viewPager.setLayoutParams(params);//将设置好的布局参数应用到控件中
 
         List<View> views = new ArrayList<View>();
-        for (int i = 0; i < 5; i++) {
-            ImageView imageView = new ImageView(this);
-            imageView.setBackgroundResource(R.mipmap.ic_launcher);
-            views.add(imageView);
-        }
+        ImageView imageView1 = new ImageView(this);
+        imageView1.setBackgroundResource(R.mipmap.image142);
 
+        ImageView imageView2 = new ImageView(this);
+        imageView2.setBackgroundResource(R.mipmap.image143);
+
+        ImageView imageView3 = new ImageView(this);
+        imageView3.setBackgroundResource(R.mipmap.image144);
+
+        ImageView imageView4 = new ImageView(this);
+        imageView4.setBackgroundResource(R.mipmap.image145);
+
+        ImageView imageView5 = new ImageView(this);
+        imageView5.setBackgroundResource(R.mipmap.image146);
+
+
+        views.add(imageView1);
+        views.add(imageView2);
+        views.add(imageView3);
+        views.add(imageView4);
+        views.add(imageView5);
         viewPager.setAdapter(new MyPagerAdapter(views));
         //左右各多加载2页（默认1页）
         viewPager.setOffscreenPageLimit(2);
